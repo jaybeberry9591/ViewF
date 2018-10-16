@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         // loop for creating ImageView's
         for (int i = 0; i < images.length; i++) {
             // create the object of ImageView
+
+            Toast.makeText(MainActivity.this,"Jerin",Toast.LENGTH_SHORT).show();
             ImageView imageView = new ImageView(this);
             imageView.setImageResource(images[i]); // set image in ImageView
             simpleViewFlipper.addView(imageView); // add the created ImageView in ViewFlipper
